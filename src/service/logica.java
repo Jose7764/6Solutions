@@ -1,8 +1,15 @@
 package service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
+import view.Visual;
+import model.*;
 
 public class logica {
+
+
+    ArrayList<blocos> ListaBlocos = new ArrayList<>();
 
     Random random = new Random();
 
@@ -15,8 +22,6 @@ public class logica {
         int d7,d8,d9;
 
         int r1,r2,r3,r4,r5,r6;
-
-
 
     public void gerarNumeros(){
 
@@ -90,12 +95,6 @@ public class logica {
 
         }
 
-
-
-    }
-
-    public void gerarRespostas(){
-
         r1 = b1 + b4 + b7;
         r2 = b2 + b5 + b8;
         r3 = b3 + b6 + b9;
@@ -105,15 +104,41 @@ public class logica {
 
     }
 
-    public void mostrarB(){
-        System.out.println(r1+" - "+r2+" - "+r3+" - "+r4+" - "+r5+" - "+r6);
-        System.out.println("\n---------------------\n");
-        System.out.println("    "+b1+" | "+b2+" | "+b3);
-        System.out.println("---------------------");
-        System.out.println("    "+b4+" | "+b5+" | "+b6);
-        System.out.println("---------------------");
-        System.out.println("    "+b7+" | "+b8+" | "+b9);
+    public String resposta1() {
+
+        String re1 = String.valueOf(r1);
+        return re1;
     }
+    public String resposta2() {
+
+        String re2 = String.valueOf(r2);
+        return re2;
+    }
+    public String resposta3() {
+
+        String re3 = String.valueOf(r3);
+        return re3;
+    }
+    public String resposta4() {
+
+        String re4 = String.valueOf(r4);
+        return re4;
+    }
+    public String resposta5() {
+
+        String re5 = String.valueOf(r5);
+        return re5;
+    }
+    public String resposta6() {
+
+        String re6 = String.valueOf(r6);
+        return re6;
+    }
+
+
+
+
+
 
 
     public void armazenarPosibilidade(){

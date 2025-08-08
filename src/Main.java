@@ -1,5 +1,6 @@
 import service.logica;
-import view.*;
+import view.Visual;
+import service.logica;
 
 import javax.swing.text.View;
 
@@ -10,13 +11,12 @@ public class Main {
         logica menu = new logica();
         Visual view = new Visual();
 
-        view.telaInicial();
 
-        /*
-        menu.comecarJogo();
-        menu.gerarRespostas();
-        menu.mostrarB();
+        menu.gerarNumeros();
+        view.telaInicial();
         menu.armazenarPosibilidade();
-         */
+
+
+
     }
 }
